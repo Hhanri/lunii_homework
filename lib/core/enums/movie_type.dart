@@ -4,14 +4,16 @@ enum MovieType {
 
   movie,
   episode,
-  series;
+  series,
+  game;
 
   static MovieType fromString(String value) {
     return switch(value) {
       "movie" => MovieType.movie,
       "episode" => MovieType.episode,
       "series" => MovieType.series,
-      _ => throw const Failure(message: 'not a valid movie type')
+      "game" => MovieType.game,
+      _ => throw Failure(message: 'not a valid movie type: $value')
     };
   }
 
