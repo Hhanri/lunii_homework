@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lunii_homework/core/theme/app_colors.dart';
+import 'package:lunii_homework/core/theme/app_padding.dart';
+import 'package:lunii_homework/core/theme/app_shaping.dart';
 import 'package:lunii_homework/core/theme/app_spacing.dart';
 import 'package:lunii_homework/core/widgets/poster_image_widget.dart';
 import 'package:lunii_homework/features/movie_info/domain/entities/movie_info_entity.dart';
@@ -25,7 +27,7 @@ class MovieInfoHeader extends StatelessWidget {
           alignment: Alignment.topCenter,
           child: Column(
             children: [
-              AppSpacing.h16,
+              AppSpacing.h32,
 
               PosterImageWidget(
                 url: movieInfo.posterUrl,
@@ -43,6 +45,20 @@ class MovieInfoHeader extends StatelessWidget {
                 label: const Text("Watch")
               )
             ],
+          ),
+        ),
+        Align(
+          alignment: Alignment.topLeft,
+          child: Container(
+            margin: AppPadding.all16,
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: AppShaping.borderRadius24
+            ),
+            child: IconButton(
+              onPressed: Navigator.of(context).maybePop,
+              icon: const Icon(Icons.arrow_back),
+            ),
           ),
         )
       ],
