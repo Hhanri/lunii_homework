@@ -10,6 +10,7 @@ final class MovieInfoModel extends MovieInfoEntity {
     required super.title,
     required super.rated,
     required super.released,
+    required super.language,
     required super.genres,
     required super.director,
     required super.writers,
@@ -18,6 +19,7 @@ final class MovieInfoModel extends MovieInfoEntity {
     required super.posterUrl,
     required super.rating,
     required super.type,
+    required super.runtime,
   });
 
   factory MovieInfoModel.fromJson(Map<String, dynamic> json) {
@@ -27,6 +29,7 @@ final class MovieInfoModel extends MovieInfoEntity {
       title: json['Title'],
       rated: json['Rated'],
       released: parseDateddMMMyyyy(json['Released']),
+      language: json['Language'],
       genres: List<String>.from((json['Genre'] as String).split(', ')),
       director: json['Director'],
       writers: List<String>.from((json['Writer'] as String).split(', ')),
@@ -35,6 +38,13 @@ final class MovieInfoModel extends MovieInfoEntity {
       posterUrl: json['Poster'] != 'N/A' ? Url(json['Poster']) : null,
       rating: double.tryParse(json['imdbRating']),
       type: MovieType.fromString(json['Type']),
+      runtime: () {
+        if (json['Runtime'] == null) return Duration.zero;
+        if (json['Runtime'] == "N/A") return Duration.zero;
+        final minutesStr = (json['Runtime'] as String).replaceAll(' min', '');
+        final minutes = int.tryParse(minutesStr);
+        return Duration(minutes: minutes ?? 0);
+      }()
     );
   }
 

@@ -77,6 +77,7 @@ main() {
           title: 'Spider-Man: No Way Home',
           rated: 'PG-13',
           released: DateTime(2021, 12, 17),
+          language: 'English',
           genres: const ['Action', 'Adventure', 'Fantasy'],
           director: 'Jon Watts',
           writers: const ['Chris McKenna', 'Erik Sommers', 'Stan Lee'],
@@ -84,7 +85,8 @@ main() {
           plot: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
           posterUrl: Url('https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_SX300.jpg'),
           rating: 8.2,
-          type: MovieType.movie
+          type: MovieType.movie,
+          runtime: const Duration(minutes: 148)
         );
 
         expect(res, expected);

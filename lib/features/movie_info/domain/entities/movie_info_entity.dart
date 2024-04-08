@@ -8,6 +8,7 @@ abstract base class MovieInfoEntity extends Equatable {
   final String title;
   final String rated;
   final DateTime released;
+  final String language;
   final List<String> genres;
   final String director;
   final List<String> writers;
@@ -16,12 +17,14 @@ abstract base class MovieInfoEntity extends Equatable {
   final Url? posterUrl;
   final double? rating;
   final MovieType type;
+  final Duration runtime;
 
   const MovieInfoEntity({
     required this.id,
     required this.title,
     required this.rated,
     required this.released,
+    required this.language,
     required this.genres,
     required this.director,
     required this.writers,
@@ -30,6 +33,7 @@ abstract base class MovieInfoEntity extends Equatable {
     required this.posterUrl,
     required this.rating,
     required this.type,
+    required this.runtime,
   });
 
 
