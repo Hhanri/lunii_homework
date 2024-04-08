@@ -1,4 +1,4 @@
-import 'package:fpdart/src/either.dart';
+import 'package:fpdart/fpdart.dart';
 import 'package:lunii_homework/core/result/api_response.dart';
 import 'package:lunii_homework/core/result/execute.dart';
 import 'package:lunii_homework/features/search_movies/data/data_sources/search_movies_data_source_interface.dart';
