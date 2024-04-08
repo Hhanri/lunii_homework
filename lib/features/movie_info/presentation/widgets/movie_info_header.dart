@@ -36,7 +36,7 @@ class MovieInfoHeader extends StatelessWidget {
               AppSpacing.h16,
               Text(
                 movieInfo.title,
-                style: Theme.of(context).textTheme.labelMedium,
+                style: Theme.of(context).textTheme.titleLarge,
               ),
               AppSpacing.h16,
               FilledButton.tonalIcon(
