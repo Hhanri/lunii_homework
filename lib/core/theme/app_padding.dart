@@ -6,8 +6,8 @@ final class AppPadding {
   AppPadding._();
 
   static const all4 = EdgeInsets.all(4);
-  static const all8 = EdgeInsets.all(4);
-  static const all16 = EdgeInsets.all(4);
+  static const all8 = EdgeInsets.all(8);
+  static const all16 = EdgeInsets.all(16);
 
   static const h4 = EdgeInsets.symmetric(horizontal: 4);
   static const h8 = EdgeInsets.symmetric(horizontal: 8);
