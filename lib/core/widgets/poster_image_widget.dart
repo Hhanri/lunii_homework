@@ -39,7 +39,7 @@ class PosterImageWidget extends StatelessWidget {
         ? const ColoredBox(color: AppColors.errorBackground)
         : CachedNetworkImage(
             imageUrl: url!.value,
-            fit: BoxFit.fill
+            fit: BoxFit.cover
           )
     );
   }
