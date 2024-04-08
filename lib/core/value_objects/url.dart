@@ -5,7 +5,7 @@ import 'package:lunii_homework/core/value_objects/value_object.dart';
 final class Url extends ValueObject<String> {
 
   Url(super.value) {
-    if (!value.isValidUrl) throw const Failure(message: 'not a valid url');
+    if (!value.isValidUrl) throw Failure(message: 'not a valid url: $value');
   }
 
   Uri get uri => Uri.parse(value);
