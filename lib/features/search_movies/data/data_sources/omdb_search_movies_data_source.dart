@@ -21,7 +21,7 @@ final class OMDBSearchMoviesDataSource implements SearchMoviesDataSourceInterfac
   static const _baseUrl = "https://www.omdbapi.com";
 
   String getSearchUrl(SearchMovieRequest request) {
-    return "$_baseUrl/s=${request.title}&apikey=$apiKey&page=${request.page}";
+    return "$_baseUrl/?s=${request.title}&apikey=$apiKey&page=${request.page}";
   }
 
   @override

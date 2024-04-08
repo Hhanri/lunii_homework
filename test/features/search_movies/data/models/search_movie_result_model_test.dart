@@ -40,21 +40,21 @@ main() {
           MoviePreviewModel(
             id: "tt0145487",
             title: "Spider-Man",
-            year: 2002,
+            year: '2002',
             posterUrl: Url("https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"),
             type: MovieType.movie
           ),
           MoviePreviewModel(
             id: "tt10872600",
             title: "Spider-Man: No Way Home",
-            year: 2021,
+            year: '2021',
             posterUrl: Url("https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_SX300.jpg"),
             type: MovieType.movie
           ),
           MoviePreviewModel(
             id: "tt2250912",
             title: "Spider-Man: Homecoming",
-            year: 2017,
+            year: '2017',
             posterUrl: Url("https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_SX300.jpg"),
             type: MovieType.movie
           )
@@ -96,21 +96,21 @@ main() {
           MoviePreviewModel(
             id: "tt0145487",
             title: "Spider-Man",
-            year: 2002,
+            year: '2002',
             posterUrl: Url("https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"),
             type: MovieType.movie
           ),
           MoviePreviewModel(
             id: "tt10872600",
             title: "Spider-Man: No Way Home",
-            year: 2021,
+            year: '2021',
             posterUrl: Url("https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_SX300.jpg"),
             type: MovieType.movie
           ),
           MoviePreviewModel(
             id: "tt2250912",
             title: "Spider-Man: Homecoming",
-            year: 2017,
+            year: '2017',
             posterUrl: Url("https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_SX300.jpg"),
             type: MovieType.movie
           )

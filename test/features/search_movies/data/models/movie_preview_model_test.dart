@@ -20,7 +20,7 @@ main() {
       final model = MoviePreviewModel(
         id: "tt0145487",
         title: "Spider-Man",
-        year: 2002,
+        year: '2002',
         posterUrl: Url("https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"),
         type: MovieType.movie
       );

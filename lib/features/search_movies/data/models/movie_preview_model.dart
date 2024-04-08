@@ -16,7 +16,7 @@ final class MoviePreviewModel extends MoviePreviewEntity {
     return MoviePreviewModel(
       id: json['imdbID'],
       title: json['Title'],
-      year: int.parse(json['Year']),
+      year: json['Year'],
       posterUrl: Url(json['Poster']),
       type: MovieType.fromString(json['Type'])
     );
