@@ -7,7 +7,7 @@ abstract base class MoviePreviewEntity extends Equatable {
   final String id;
   final String title;
   final String year;
-  final Url posterUrl;
+  final Url? posterUrl;
   final MovieType type;
 
   const MoviePreviewEntity({
