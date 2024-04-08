@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:lunii_homework/core/theme/app_spacing.dart';
 import 'package:lunii_homework/features/movie_info/domain/entities/movie_info_entity.dart';
 
 class MovieInfoCreditWidget extends StatelessWidget {
@@ -30,6 +31,7 @@ class MovieInfoCreditWidget extends StatelessWidget {
           title,
           style: Theme.of(context).textTheme.titleMedium,
         ),
+        AppSpacing.w32,
         Flexible(child: Text(value))
       ],
     );
