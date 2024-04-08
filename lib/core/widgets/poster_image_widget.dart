@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:lunii_homework/core/theme/app_colors.dart';
+import 'package:lunii_homework/core/theme/app_shaping.dart';
 import 'package:lunii_homework/core/value_objects/url.dart';
 
 class PosterImageWidget extends StatelessWidget {
@@ -24,7 +25,7 @@ class PosterImageWidget extends StatelessWidget {
           color: Colors.white,
           width: 2
         ),
-        borderRadius: BorderRadius.circular(4),
+        borderRadius: AppShaping.borderRadius8,
         boxShadow: const [
           BoxShadow(
             color: Colors.black12,
