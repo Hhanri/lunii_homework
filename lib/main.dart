@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lunii_homework/core/theme/theme.dart';
 import 'package:lunii_homework/features/search_movies/presentation/pages/search_movie_page_wrapper.dart';
 import 'package:lunii_homework/setup/setup_sl.dart';
 
@@ -16,10 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Lunii Homework',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: theme,
       home: const SearchMoviePageWrapper(),
     );
   }
