@@ -20,6 +20,7 @@ final class SearchMovieResultModel extends SearchMoviesResultEntity {
     );
   }
 
+  @override
   bool get hasMore => data.isNotEmpty;
 
   @override
