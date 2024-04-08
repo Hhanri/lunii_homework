@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lunii_homework/core/theme/app_padding.dart';
 import 'package:lunii_homework/core/theme/app_shaping.dart';
@@ -64,9 +65,11 @@ class MovieInfoDetailsCardWidget extends StatelessWidget {
           title,
           style: const TextStyle(color: Colors.black54),
         ),
-        Text(
-          value,
-          style: Theme.of(context).textTheme.titleMedium,
+        Flexible(
+          child: Text(
+            value,
+            style: Theme.of(context).textTheme.titleMedium,
+          ),
         )
       ],
     );
