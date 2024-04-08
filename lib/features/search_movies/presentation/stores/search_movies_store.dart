@@ -43,6 +43,8 @@ abstract class _SearchMoviesStore with Store {
     isLoading = true;
     hasMore = true;
 
+    movies.clear();
+
     final res = await searchMovieUseCase.call(searchMovieRequest);
 
     res.fold(
